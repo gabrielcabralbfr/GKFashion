@@ -1,0 +1,56 @@
+div#container{
+    margin:auto;
+    width: 940px;
+}
+
+h1{
+    display: none;
+}
+título de nível 1 do header deverá sumir e aparecer fundo do logo
+formatar o link: header h1 a:
+altura: 134px
+largura: 130px
+display: block
+text‐ident: ‐9999px (faz com que o texto suma)
+background‐image: logo_GK.png
+margem externa esquerda: 40px
+título de nível 2:
+borda inferior: sólida 2px cor livre
+margem superior: 30px
+tam da fonte: 1.2em.
+figure:
+cor de fundo: #F2EDED
+borda: 1px sólida cor livre
+alinhamento: centralizado
+margem interna: 15px
+margem externa: 30px
+
+legenda da figure:
+margem superior: 10px
+parágrafos:
+margem superior: 15px
+margem interna esquerda e direita: 45px
+altura da linha: 1.5em.
+figure com id "centro‐distribuicao":
+centralizada na horizontal
+largura: 550px
+figure com id "familia‐teles":
+flutuando à direita do texto
+margem inferior e direita:  10px
+lista de diferenciais:
+margem superior externa 15px
+margem direita externa de 60px.
+links:
+retire o sublinhado
+defina uma cor
+links ao passar o mouse (a:hover)
+volte com o sublinhado
+rodape:
+cor de fonte: #ccc
+margem externa superior e inferior: 30px
+margem externa direita e esquerda: 0
+imagem de fundo "fundo‐rodape.png"
+clear both
+imagem do rodapé:
+alinhamento vertical: meio
+margem externa esquerda: 30px
