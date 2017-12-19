@@ -1,7 +1,7 @@
 html,
 body {
   font-style: normal;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   background: url("./img/background.png");
 }
@@ -12,11 +12,15 @@ p {
   line-height: 1.5em;
 }
 div#container {
-  margin: auto;
+  margin: 0 auto;
   width: 940px;
 }
 
 /* HEADER */
+
+header {
+  position: relative;
+}
 header h1 a {
   height: 134px;
   width: 130px;
@@ -120,14 +124,6 @@ footer {
 /* END FOOTER */
 
 /* CSS para index */
-.menu-principal li > a {
-  text-decoration: none;
-  color: rgb(77, 168, 41);
-}
-
-header {
-  position: relative;
-}
 
 .sacola {
   background: url("./img/sacola.png") no-repeat top right;
@@ -150,10 +146,13 @@ header {
 }
 
 .menu-principal li a {
-  transition: 0.6s;
+  text-decoration: none;
+  color: rgb(77, 168, 41);
+  text-decoration: none;
+  transition: all 0.6s;
 }
 .menu-principal li a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #000;
   transition: 0.6s;
 }
@@ -172,6 +171,10 @@ header {
   clear: left;
   margin-top: 10px;
   padding-bottom: 10px;
+}
+
+.menu-departamentos li:hover {
+  background-color: #e1e1e1;
 }
 
 #busca > h2,
@@ -240,7 +243,7 @@ header {
 }
 
 .painel h2 {
-  text-shadow: rgb(255, 255, 255, 0.8);
+  text-shadow: 3px 3px rgba(255, 255, 255, 0.8);
 }
 
 .painel h2:before {
@@ -269,15 +272,14 @@ header {
   width: 140px;
   margin: 2px;
   padding-bottom: 10px;
-  transition: 0.7s, ease-out;
+  transition: 0.7s ease-out;
 }
 
 .painel li:hover {
   box-shadow: 5px 5px 5px pink;
-  background-color: rgb(255, 255, 255, 0.8);
-  zoom: 1.0;
+  background-color: rgba(255, 255, 255, 0.8);
   transform: scale(1.2) rotate(-5deg);
-  transition: 0.7s, ease-in;
+  transition: 0.7s ease-in;
 }
 
 .painel h2 {
@@ -306,8 +308,21 @@ header {
   margin: 5px 0;
 }
 
-#contato {
+#form-contato {
+  width: 400px;
   margin: 0 auto;
+  background-color: #e1e1e1;
+  padding: 20px;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 5px;
+}
+
+input[type="submit"] {
+  display: block;
 }
 
 /* END FORMULARIO */
@@ -331,4 +346,167 @@ table a {
   color: rgb(77, 168, 41);
 }
 
+table {
+  margin: 40px 0;
+}
+
 /* END TABELA*/
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 480px) {
+  div#container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* PAINEIS */
+  .painel li {
+    width: 45%;
+    margin: 2px;
+    padding-bottom: 10px;
+  }
+
+  .painel figure img {
+    width: 110px;
+  }
+
+  .novidades,
+  .mais-vendidos {
+    width: 80%;
+    margin: 10px 20px;
+    float: none;
+  }
+  /* END PAINEIS */
+
+  /* FOOTER*/
+  .social {
+    top: 85px;
+  }
+
+  .caixa-footer > img {
+    width: 20%;
+    margin-left: 0;
+  }
+
+  .caixa-footer {
+    height: 100px;
+  }
+
+  /* END FOOTER */
+
+  /* INDEX */
+  /* DESTAQUE */
+  .menu-principal li {
+    padding: 10px;
+    width: auto;
+  }
+
+  #img-destaque {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  header h1 a {
+    height: 90px;
+    width: 90px;
+    display: block;
+    text-indent: -9999px;
+    background: url("./img/logo_GK.png");
+    background-size: 90px 90px;
+    margin-left: 10px;
+  }
+
+  .caixa-destaque h2 {
+    font-size: 0.8em;
+  }
+  /* END DESTAQUE */
+
+  /* MENU E BUSCA */
+  .menu-departamentos li {
+    font-size: 0.6em;
+  }
+
+  .menu-departamentos h2,
+  .busca h2 {
+    margin-top: 10px;
+  }
+
+  #nav-departamentos {
+    display: none;
+  }
+
+  .menu-departamentos:hover #nav-departamentos {
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu-departamentos::after {
+    content: "\27F1";
+  }
+
+  .menu-departamentos {
+    float: right;
+    width: 45%;
+    clear: none;
+    margin-top: 0;
+    height: 50px;
+    text-align: center;
+  }
+
+  .busca {
+    float: left;
+    width: 45%;
+    border-radius: 0px;
+    margin: 0 5px;
+  }
+
+  .busca input[type="search"] {
+    width: 100px;
+  }
+  /* END MENU E BUSCA */
+  /* END INDEX */
+
+  /* CONTATO */
+
+  textarea {
+    width: 90%;
+  }
+
+  #form-contato {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* END CONTATO */
+
+  /* SOBRE */
+  #sobre {
+    width: 100%;
+  }
+  figure#centro-distribuicao img {
+    width: 270px;
+  }
+  #centro-distribuicao {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #familia-teles {
+    float: none;
+    margin: 0 auto;
+  }
+  #familia-teles img {
+    width: 270px;
+  }
+
+  /* END SOBRE */
+}
+
+@media screen and (max-width: 320px) {
+  .painel li {
+    width: 100%;
+  }
+}
+/* END MEDIA QUERIES*/

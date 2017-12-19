@@ -1,0 +1,30 @@
+Parte 6:
+1) A criação de um site separado para mobile só seria necessário em ultimo caso, pois na maioria dos casos o mesmo objetivo é atingido através da criação de um site responsivo, entretanto, podem existir situações em que a versão mobile é 100% diferente da versão desktop, então nesses casos um site separado possa ser a melhor opção. No caso da GK Fashion, a aplicação da responsividade é suficiente.
+
+2) @media print{
+}
+
+
+Parte 7:
+1) Os atributos do elemento source em audio são esses:
+
+src -> define o caminho onde o arquivo se encontra
+media -> define o tipo de midia query a ser utilizado
+type -> define o tipo (MIME) do elemento
+
+2) Os atributos do elemento source em video são esses:
+
+src -> define o caminho onde o arquivo se encontra
+media -> define o tipo de midia query a ser utilizado
+type -> define o tipo (MIME) do elemento
+
+
+
+3) As animações são feitas principalmente com Javascript, entretanto, através do CSS conseguimos obter alguns resultados também. As APIs são funcionalidades como GeoLocalização, WebStorage, Drag and Drop, validação de formulários, conroles de áudio e vídeo e o Canvas. As versões anteriores do HTML se tratavam apenas de marcação, entretanto, com o surgimento do HTML5, novas funcionalidades foram criadas e encapsuladas em APIs que são acessadas através do Javascript.
+
+4) video {
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	
+}
